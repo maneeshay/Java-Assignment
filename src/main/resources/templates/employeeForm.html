@@ -16,21 +16,21 @@
 					<div class="row p-2">
 						<div class="col-4">First Name</div>
 						<div class="col-6">
-							<input type="text" name="fname" class="form-control">
+							<input type="text" name="fname" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Last Name</div>
 						<div class="col-6">
-							<input type="text" name="lname" class="form-control">
+							<input type="text" name="lname" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Gender</div>
 						<div class="col-6">
-							<input class="form-check-input" type="radio" name="gender" value="male">Male
+							<input class="form-check-input" type="radio" name="gender" value="male" checked>Male
 							<input class="form-check-input" type="radio" name="gender" value="female">Female
 							
 						</div>
@@ -39,56 +39,56 @@
 					<div class="row p-2">
 						<div class="col-4">Date of Birth</div>
 						<div class="col-6">
-							<input type="date" name="dob" class="form-control">
+							<input type="date" name="dob" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Age</div>
 						<div class="col-6">
-							<input type="number" name="age" class="form-control">
+							<input type="number" name="age" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Company</div>
 						<div class="col-6">
-							<input type="text" name="companyName" class="form-control">
+							<input type="text" name="companyName" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Post</div>
 						<div class="col-6">
-							<input type="text" name="post" class="form-control">
+							<input type="text" name="post" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Join Date</div>
 						<div class="col-6">
-							<input type="date" name="joinDate" class="form-control">
+							<input type="date" name="joinDate" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Salary</div>
 						<div class="col-6">
-							<input type="number" name="salary" class="form-control">
+							<input type="number" name="salary" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Email</div>
 						<div class="col-6">
-							<input type="email" name="email" class="form-control">
+							<input type="email" name="email" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">Phone</div>
 						<div class="col-6">
-							<input type="text" name="phone" class="form-control">
+							<input type="text" name="phone" class="form-control" required>
 						</div>
 					</div>
 					
@@ -105,21 +105,21 @@
 					<div class="row p-2">
 						<div class="col-4">Country</div>
 						<div class="col-6">
-							<input type="text" name="address.country" class="form-control">
+							<input type="text" name="address.country" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">City</div>
 						<div class="col-6">
-							<input type="text" name="address.city" class="form-control">
+							<input type="text" name="address.city" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4">State</div>
 						<div class="col-6">
-							<select class="form-select" name="address.state">
+							<select class="form-select" name="address.state" required>
 								<option value="">Select</option>
 								<option value="state-1">State-1</option>
 								<option value="state-2">State-2</option>
@@ -132,14 +132,14 @@
 					<div class="row p-2">
 						<div class="col-4">Zip Code</div>
 						<div class="col-6">
-							<input type="text" name="address.zipcode" class="form-control">
+							<input type="text" name="address.zipcode" class="form-control" required>
 						</div>
 					</div>
 					
 					<div class="row p-2">
 						<div class="col-4"></div>
 						<div class="col-6">
-							<input type="submit" value="Save" class="btn btn-success">
+							<input type="submit" value="Save" class="btn btn-success" required>
 						</div>
 					</div>
 				</form>

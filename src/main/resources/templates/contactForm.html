@@ -12,13 +12,13 @@
 		<div class="row m-2 p-2">
 			<form action="/contact" method="post">
 				<div>
-					To Email<input type="email" name="toEmail" class="form-control">
+					To Email<input type="email" name="toEmail" class="form-control" required>
 				</div>
 				<div>
-					Subject<input type="text" name="subject" class="form-control">
+					Subject<input type="text" name="subject" class="form-control" required>
 				</div>
 				<div>
-					Message<textarea rows="5" cols="20" name="message" class="form-control"></textarea><br>
+					Message<textarea rows="5" cols="20" name="message" class="form-control" required></textarea><br>
 				</div>
 				<div>
 					<input type="submit" value="Send" class="btn btn-success w-10">

@@ -79,4 +79,9 @@ public class UserController {
 		session.invalidate(); //session kill
 		return "loginForm";
 	}
+	
+	@GetMapping("/profile")
+	public String profile() {
+		return "profile";
+	}
 }
