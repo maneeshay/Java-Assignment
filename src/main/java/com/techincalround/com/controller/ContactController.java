@@ -1,8 +1,8 @@
 /*
  * Contact controller handles the mail sending
  * @Version 1.0
- * @Author Manisha Yadav
- * @since 2023-7-22
+ * @author Manisha Yadav
+ * 
  * 
  */
 package com.techincalround.com.controller;
@@ -24,7 +24,7 @@ public class ContactController {
 	
 	/*
 	 * This method is used to set the url and redirect to required html page
-	 * @Param contact this is url for contact page
+	 * @param contact this is url for contact page
 	 */
 	@GetMapping("/contact")
 	public String getContact() {
@@ -32,7 +32,12 @@ public class ContactController {
 	}
 	
 	/*
-	 * This met
+	 * This method is used to send the mail to a certain email address.
+	 * @param toEmail this is the email where you want to send mail
+	 * @param subject this is the subject of the email
+	 * @para message this is the message of the email sent
+	 * 
+	 * @return ContactForm return to contact form again after sending mail
 	 */
 	@PostMapping("/contact")
 	public String postMail(@RequestParam String toEmail,

@@ -1,3 +1,7 @@
+/*
+ * This interface allows us to add functionalities to perform CRUD on employee
+ * @author Manisha Yadav
+ */
 package com.techincalround.com.service;
 
 import java.util.List;

@@ -1,3 +1,8 @@
+/*
+ * This class allows us perform logic operations i.e. check user login details and check if user exist 
+ * @author Manisha Yadav
+ */
+
 package com.techincalround.com.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;

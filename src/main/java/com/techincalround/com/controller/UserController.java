@@ -1,3 +1,6 @@
+/*
+ * This class deals with user login and registration
+ */
 package com.techincalround.com.controller;
 
 //import org.slf4j.Logger;
@@ -23,17 +26,32 @@ public class UserController {
 	@Autowired
 	private IUserService service;
 	
+	/*
+	 * This method opens the login form
+	 * @return loginForm login form
+	 */
 	@GetMapping({"/login","/"})
 	public String getLoginForm() {
 		return "loginForm";
 	}
 	
+	/*
+	 * Open signup form
+	 * @return signupForm signup form 
+	 */
 	@GetMapping("/signup")
 	public String getSignupForm() {
 		return "signupForm";
 	}
 	
-
+	/*
+	 * This method register the user
+	 * @param user object of model user
+	 * @param model model
+	 * 
+	 * @return loginForm login form for user
+	 * @return signupForm signup form for user
+	 */
 	@PostMapping("/signupp")
 	public String saveUser(@ModelAttribute User user, Model model) {
 		
@@ -49,6 +67,13 @@ public class UserController {
 		return "signupForm";
 	}
 	
+	/*
+	 * This method deals with user login
+	 * @param user object of User model
+	 * @param session user interval inside the app
+	 * 
+	 * @return home home page
+	 */
 	@PostMapping("/login")
 	public String userLogin(@ModelAttribute User user, Model model, HttpSession session) {
 		
@@ -72,7 +97,12 @@ public class UserController {
 		
 	}
 	
-	
+	/*
+	 * This method deals with logout of user from app
+	 * @param session user interval inside the app
+	 * 
+	 * @return loginForm Login Form of a user
+	 */
 	@GetMapping("/logout")
 	public String logout(HttpSession session) {
 		
@@ -80,8 +110,4 @@ public class UserController {
 		return "loginForm";
 	}
 	
-	@GetMapping("/profile")
-	public String profile() {
-		return "profile";
-	}
 }

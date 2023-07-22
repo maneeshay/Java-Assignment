@@ -1,3 +1,7 @@
+/*
+ * This class the implements the method created in interface IUserService
+ * @author Manisha Yadav
+ */
 package com.techincalround.com.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,19 +16,36 @@ public class UserServiceImpl implements IUserService{
 	
 	@Autowired
 	private UserRepository userRepo;
-
+	
+	/*
+	 * This method implements user signup method.
+	 * @param user obejct of User
+	 * @return nothing
+	 */
 	@Override
 	public void userSignup(User user) {
 		userRepo.save(user);
 		
 	}
-
+	
+	/*
+	 * This method implements user login method.
+	 * @param email email of user login
+	 * @param password password of user login
+	 * 
+	 * @return nothing
+	 */
 	@Override
 	public User userLogin(String email, String password) {
 	
 		return userRepo.findByEmailAndPassword(email, password);
 	}
-
+	
+	/*
+	 * This method implements method to check if user exist.
+	 * @param emmail user's used email to crate their account
+	 * @return boolean value
+	 */
 	@Override
 	public boolean isUserExist(String email) {
 		// TODO Auto-generated method stub

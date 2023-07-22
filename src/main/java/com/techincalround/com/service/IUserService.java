@@ -1,3 +1,6 @@
+/*
+ * This interface allows us add functionalities to perform user login and registration
+ */
 package com.techincalround.com.service;
 
 import com.techincalround.com.model.User;
