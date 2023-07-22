@@ -21,7 +21,7 @@ How to run?
 
 open xampp control panel start apache and mysql server
 
-create database name "springbootnew" in MySQL.
+create database name "java_assignment" in MySQL.
 or
 
 (you can also create the database with different name in MySQL. 
